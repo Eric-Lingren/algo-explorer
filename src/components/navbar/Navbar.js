@@ -19,10 +19,10 @@ const Navbar = () => {
 
 
     return (
-        <div>
+        <div ref={navlinkRef}>
             <FontAwesomeIcon className='fa-icon-menu' icon={faBars} onClick={() => setIsOpen(!isOpen)}/>
             {isOpen &&
-                <div className='link-wrapper' ref={navlinkRef}>
+                <div className='link-wrapper' >
                     <Link className='link' to='bubble-sort' onClick={() => setIsOpen(false)}> Bubble Sort </Link>
                     <Link className='link' to='insert-sort' onClick={() => setIsOpen(false)}> Insert Sort </Link>
                 </div>
