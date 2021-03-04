@@ -1,0 +1,37 @@
+.fa-icon-menu {
+    font-size: 30px;
+    color: #C02F1D;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.fa-icon-menu:hover {
+    cursor: pointer;
+}
+
+/* .question:hover {
+    cursor: help;
+} */
+
+.link-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #C02F1D;
+    align-items: flex-start;
+}
+
+.link {
+    padding-top: 5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid #C02F1D;
+}
+
+.link:hover {
+    border-bottom: 1px solid white;
+}
