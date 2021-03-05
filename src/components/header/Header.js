@@ -1,10 +1,15 @@
+import { useContext } from "react"
 import { useLocation } from "react-router-dom"
+import { Link } from 'react-router-dom'
+import { DataContext } from '../../context/DataProvider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
-import { faInfoCircle, faSync } from '@fortawesome/free-solid-svg-icons'
+import { faSync } from '@fortawesome/free-solid-svg-icons'
 import Navbar from '../navbar/Navbar'
 import './header.css';
+import InfoModal from '../info-modal/InfoModal'
 
 const Header = () => {
+    const { buildData } = useContext(DataContext)
     const location = useLocation()
 
     let cleanedName = ''
@@ -21,13 +26,15 @@ const Header = () => {
         <div className="header-wrap">
             <div className='container'>
                 <Navbar />
-                <h1 className='header-text'> Algo-Explorer </h1>
+                <Link to='/' className='header-link'> 
+                    <h1 className='header-text'> Algo-Explorer </h1>
+                </Link>
             </div>
             {cleanedName.length > 0 &&
                 <div className='container right-container'>
                     <h1 className='header-text header-text-right'> {cleanedName} </h1>
-                    <FontAwesomeIcon className='fa-icon-info question' icon={faInfoCircle} />
-                    <FontAwesomeIcon className='fa-icon-info reset' icon={faSync} />
+                    < InfoModal algoName={cleanedName}/>
+                    <FontAwesomeIcon className='fa-icon-info reset' icon={faSync} onClick={buildData} />
                 </div>
             }
         </div>

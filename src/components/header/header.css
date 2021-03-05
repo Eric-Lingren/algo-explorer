@@ -19,6 +19,10 @@
     margin-top: 15px;
 }
 
+.header-link {
+    color: #C02F1D;
+}
+
 .header-text {
     font-size: 36px;
     margin: 0;
@@ -50,6 +54,7 @@
     font-size: 24px;
     margin-right: 20px;
 }
+
 
 
 @media only screen and (max-width: 426px){

@@ -1,0 +1,38 @@
+.close-container {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.fa-icon-close {
+    font-size: 28px;
+    color: #C02F1D;
+    cursor: pointer;
+}
+
+.modal-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -25px;
+}
+
+.modal-header {
+    text-align: center;
+    color: #C02F1D;
+    font-weight: bold;
+    margin: 0;
+    width: 60%;
+    border-bottom: 3px solid #C02F1D;
+}
+
+.modal-text-container {
+    padding: 20px 50px;
+}
+
+.modal-text-paragraph {
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}

@@ -1,14 +1,15 @@
-import { useState, useEffect } from 'react' 
-import sortableData from '../../data/sortableData'
+import { useState, useEffect, useContext } from 'react' 
+import { DataContext } from '../../context/DataProvider'
 import DataChart from '../DataChart'
+
 
 const  BubbleSort = () => {
     const [triggerChartRerender, setTriggerChartRerender] = useState(0)
-
-    let delay = 500
+    const { sortableData } = useContext(DataContext)
+    let delay = 400
 
     useEffect(() => {
-    }, [triggerChartRerender])
+    }, [triggerChartRerender, sortableData])
 
 
     const runBubbleSort = () => {
@@ -41,7 +42,7 @@ const  BubbleSort = () => {
             <div className='button-wrapper'>
                 <button onClick={runBubbleSort}> Run Sort </button>
             </div>
-            <DataChart data={sortableData} />
+            { sortableData && <DataChart data={sortableData} /> }
         </div>
     );
 }

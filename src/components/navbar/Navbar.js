@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useContext } from 'react'
+import { DataContext } from '../../context/DataProvider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
@@ -6,8 +7,9 @@ import './navbar.css'
 
 
 const Navbar = () => {
+    const { buildData } = useContext(DataContext)
     const [isOpen, setIsOpen] = useState(false)
-    const navlinkRef = useRef(null);
+    const navlinkRef = useRef(null)
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -17,14 +19,19 @@ const Navbar = () => {
         return () => document.removeEventListener("mousedown", handleClickOutside)
     }, [])
 
+    const navigateAway = () => {
+        buildData()
+        setIsOpen(false)
+    }
+
 
     return (
         <div ref={navlinkRef}>
             <FontAwesomeIcon className='fa-icon-menu' icon={faBars} onClick={() => setIsOpen(!isOpen)}/>
             {isOpen &&
                 <div className='link-wrapper' >
-                    <Link className='link' to='bubble-sort' onClick={() => setIsOpen(false)}> Bubble Sort </Link>
-                    <Link className='link' to='insert-sort' onClick={() => setIsOpen(false)}> Insert Sort </Link>
+                    <Link className='link' to='bubble-sort' onClick={navigateAway}> Bubble Sort </Link>
+                    <Link className='link' to='insert-sort' onClick={navigateAway}> Insert Sort </Link>
                 </div>
             }
         </div>

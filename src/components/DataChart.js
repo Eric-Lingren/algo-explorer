@@ -24,7 +24,7 @@ const  DataChart = ({ data }) => {
     }
 
     return (
-        <div style={{height: '70vh', width: '99vw'}}>
+        <div style={{height: '70vh', width: '100vw'}}>
             <Bar 
                 data={chartData} 
                 options={{
@@ -40,7 +40,25 @@ const  DataChart = ({ data }) => {
                         yAxes: [{
                             display: true,
                             ticks: {
-                                beginAtZero: true 
+                                beginAtZero: true,
+                                fontSize: 14
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Integer Values',
+                                fontSize: 18
+                            }
+                        }],
+                        xAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: false,
+                                fontSize: 14
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Available Dataset',
+                                fontSize: 18
                             }
                         }]
                     }
