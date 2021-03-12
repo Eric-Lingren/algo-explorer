@@ -1,0 +1,32 @@
+.home-wrap {
+    height: 91vh;
+}
+
+.background-image {
+    background-image: url("../../assets//math.jpeg");
+    opacity: 0.9;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    box-shadow: 1px 0 10px 10px white inset;
+    z-index: 0;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}

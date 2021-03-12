@@ -9,10 +9,6 @@
     cursor: pointer;
 }
 
-/* .question:hover {
-    cursor: help;
-} */
-
 .link-wrapper {
     display: flex;
     flex-direction: column;
@@ -21,6 +17,7 @@
     margin-top: 15px;
     background-color: #C02F1D;
     align-items: flex-start;
+    z-index: 1;
 }
 
 .link {

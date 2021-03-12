@@ -9,7 +9,7 @@ const customStyles = {
     content : {
         marginRight: '5%',
         marginLeft: '5%',
-        border: '2px solid #156477'
+        border: '4px solid #156477'
     },
     overlay: {
         position: 'fixed',
@@ -17,7 +17,8 @@ const customStyles = {
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(21, 100, 119, 0.7)'
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        // backgroundColor: 'rgba(21, 100, 119, 0.7)'
     }
 }
 
