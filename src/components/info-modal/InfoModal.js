@@ -64,15 +64,15 @@ const InfoModal = ({ algoName }) => {
                     <h1 className='modal-header'> {algoName} </h1>
                 </div>
                 <div className='efficiency-container-wrap'>
-                    <h3>Efficency:</h3>
+                    <h3>Complexity Efficency:</h3>
                         <div>
-                            <h4>Best: {returnSuperString(algoData.best)} </h4>
+                            <h4>Best - {returnSuperString(algoData.best)} </h4>
                         </div>
                         <div>
-                            <h4>Average: {returnSuperString(algoData.average)} </h4>
+                            <h4>Average - {returnSuperString(algoData.average)} </h4>
                         </div>
                         <div>
-                            <h4>Worst: {returnSuperString(algoData.worst)} </h4>
+                            <h4>Worst - {returnSuperString(algoData.worst)} </h4>
                         </div>
                 </div>
                 <div className='modal-text-container'>

@@ -40,13 +40,25 @@
 .efficiency-container-wrap {
     display: flex;
     justify-content: space-between;
-    /* align-content: center;
-    align-items: center; */
-    /* width: 100%; */
     padding: 0 50px 0 50px;
 }
 
 .efficiency-container-wrap, h3, h4 {
     margin: 10px 0 0 0;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 426px){
+    .modal-text-container {
+        padding: 20px 0;
+    }
+    .efficiency-container-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .efficiency-container-wrap {
+        padding: 0;
+    }
 }
