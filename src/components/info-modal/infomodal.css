@@ -36,3 +36,17 @@
     font-size: 18px;
     margin: 10px 0 20px 0;
 }
+
+.efficiency-container-wrap {
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center;
+    align-items: center; */
+    /* width: 100%; */
+    padding: 0 50px 0 50px;
+}
+
+.efficiency-container-wrap, h3, h4 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}

@@ -1,0 +1,34 @@
+{
+    "algos": [
+        {
+            "name": "Bubble Sort",
+            "best": "O(n)",
+            "average": "O(n2)",
+            "worst": "O(n2)",
+            "overview": "Most sorting algorithms have better performance and are not more complex. This makes bubble sort a non-practical sorting algorithm to use.",
+            "advantages": "The ability to detect if the list is sorted is quite efficent as it is built into the algorithm.  It is easy to write and understand. Data is sorted in place so there is little overhead.",
+            "disadvantages": "Bubble Sort takes a long time to sort and the average time increases exponentially as the data set grows making it unsuitable for large datasets.",
+            "howItWorks": "Bubble Sort begins at one side of the data and compares adjacent items. If they are in the wrong order, either ascending or descending, their locations are switched.  This pattern repeats through the dataset until no more swaps are needed. The simplest way to achieve this is with nested for loops."
+        },
+        {
+            "name": "Insert Sort",
+            "best": "O(n)",
+            "average": "O(n2)",
+            "worst": "O(n2)",
+            "overview": "",
+            "advantages": "",
+            "disadvantages": "",
+            "howItWorks": ""
+        },
+        {
+            "name": "",
+            "best": "",
+            "average": "",
+            "worst": "",
+            "overview": "",
+            "advantages": "",
+            "disadvantages": "",
+            "howItWorks": ""
+        }
+    ]
+}

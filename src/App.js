@@ -4,7 +4,6 @@ import { DataContext } from './context/DataProvider'
 import BubbleSort from './components/algorithms/BubbleSort'
 import InsertSort from './components/algorithms/InsertSort'
 import Header from './components/header/Header'
-import Three from './components/three/Three'
 import './App.css';
 
 
@@ -23,7 +22,6 @@ const App = () => {
           <Route path='/bubble-sort' component={BubbleSort} />
           <Route path='/insert-sort' component={InsertSort} />
         </Switch>
-        <Three />
     </div>
   );
 }

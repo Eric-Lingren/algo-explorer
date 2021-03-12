@@ -19,6 +19,7 @@ const Header = () => {
         nameArr.forEach(word => {
             cleanedName = cleanedName + word[0].toUpperCase() + word.substring(1) + ' '
         })
+        cleanedName = cleanedName.trim()
     }
 
 
