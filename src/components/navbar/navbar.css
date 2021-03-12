@@ -2,7 +2,7 @@
     font-size: 30px;
     color: #C02F1D;
     cursor: pointer;
-    margin-left: 20px;
+    margin: 0 30px 0 20px;
 }
 
 .fa-icon-menu:hover {
