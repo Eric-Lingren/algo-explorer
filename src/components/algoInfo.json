@@ -15,10 +15,10 @@
             "best": "O(n)",
             "average": "O(n2)",
             "worst": "O(n2)",
-            "overview": "",
-            "advantages": "",
-            "disadvantages": "",
-            "howItWorks": ""
+            "overview": "Insert Sort (also known as Insertion Sort) is a very simple sorting algorithm, similar to selection sort. The primary difference being that insert sort looks backwards for an insertion point where selection sort looks forward. It is not very efficent on large datasets.",
+            "advantages": "Easy to build, moderately more efficent than bubble sort, good performance on small lists or presorted lists, opperates in place so space/ram requirements are minimal.",
+            "disadvantages": "Insert sort doesn't perform well on large datasets since its speed is a factor of n (list length).",
+            "howItWorks": "Insert sort is a looping sorting algorithm where the list is broken into two pieces, sorted and unsorted, and consumes one item per iteration. It runs through the unsorted portion, removes a selected item from the unsorted portion, finds the correct location for it in the sorted portion and inserts it there."
         },
         {
             "name": "",
