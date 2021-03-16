@@ -42,10 +42,7 @@ const InfoModal = ({ algoName }) => {
     const [modalIsOpen,setIsOpen] = useState(false)
     const openModal = () => setIsOpen(true)
     const closeModal = ()=> setIsOpen(false)
-
-    let algoData = jsonData.algos.filter(item => item.name.includes(algoName))
-    algoData = algoData[0]
-    console.log(algoData)
+    let algoData = jsonData.algos.filter(item => item.name.includes(algoName))[0]
 
 
     return (

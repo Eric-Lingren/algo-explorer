@@ -1,8 +1,8 @@
 import { useEffect, useContext } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { DataContext } from './context/DataProvider'
-import BubbleSort from './components/algorithms/BubbleSort'
-import InsertSort from './components/algorithms/InsertSort'
+import BubbleSort from './components/algorithms/sorts/BubbleSort'
+import InsertSort from './components/algorithms/sorts/InsertSort'
 import Header from './components/header/Header'
 import Homepage from './components/homepage/Homepage'
 import './App.css';

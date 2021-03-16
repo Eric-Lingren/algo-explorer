@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react' 
-import { DataContext } from '../../context/DataProvider'
-import DataChart from '../DataChart'
+import { DataContext } from '../../../context/DataProvider'
+import DataChart from '../../DataChart'
 
 
 const  BubbleSort = () => {
@@ -30,7 +30,6 @@ const  BubbleSort = () => {
                     setTriggerChartRerender(i)
                     myLoop(i)
                 }
-                else console.log('finished')
             }, delay)
             
         })(sortableData.length)  

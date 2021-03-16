@@ -1,10 +1,8 @@
 import { Bar } from 'react-chartjs-2'
 
 const  DataChart = ({ data }) => {
-
     const dataIntegers = Array.from(data, item => item.integer)
     const dataColors = Array.from(data, item => item.color)
-
 
     let chartData = {
         labels: dataIntegers,
