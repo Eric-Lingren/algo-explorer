@@ -7,8 +7,8 @@ const jsonData = require('../algoInfo.json')
 
 const customStyles = {
     content : {
-        marginRight: '5%',
-        marginLeft: '5%',
+        marginRight: '0%',
+        marginLeft: '0%',
         border: '4px solid #156477'
     },
     overlay: {
@@ -18,7 +18,6 @@ const customStyles = {
         right: 0,
         bottom: 0,
         backgroundColor: 'rgba(0, 0, 0, 0.6)'
-        // backgroundColor: 'rgba(21, 100, 119, 0.7)'
     }
 }
 

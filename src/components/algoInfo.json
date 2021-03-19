@@ -25,10 +25,30 @@
             "best": "O log(n)",
             "average": "O log(n)",
             "worst": "O log(n)",
-            "overview": "Merge Sort is a general purpose algorithm that utilizes a recursive divide and conquer mechanism.",
-            "advantages": "",
-            "disadvantages": "",
-            "howItWorks": ""
+            "overview": "Merge Sort is a general purpose algorithm that utilizes a recursive divide and conquer mechanism.  It was originally used to store data on tape drives.",
+            "advantages": "Merge Sort is a stable sort so it preserves the input order of equal elements. It is significantly more efficent than QuickSort. It opperates quickly on large lists because it doesn't need to iterate through the data multiple times.",
+            "disadvantages": "Merge Sort does not sort items in place so there must be enough memory alocated to store the sorted output or sublists.  It may not be as efficent as some other sorting algorithms on very small datasets or on presorted lists because the entire process must still be run from start to finish.",
+            "howItWorks": "Merge Sort divides the list into the smallest possible unit.  It will compare each element with the adjacent list.  It repeatedly merges these sublists to produce new sorted sublists until there is only one sublist remaining which is the final sorted output."
+        },
+        {
+            "name": "Selection Sort",
+            "best": "O(n2)",
+            "average": "O(n2)",
+            "worst": "O(n2)",
+            "overview": "Selection Sort is an in place comparision sorting algorithm. ",
+            "advantages": "Seleciton Sort is simple to write and is good when memory is limited because it sorts in place.  It does perform well on small lists or presorted lists.",
+            "disadvantages": "It is inefficent on large lists and generally performs worse than Insert Sort and Quick Sort.",
+            "howItWorks": "The list is divided into 2 sublists - sorted and unsorted.  The sorted sublist begins by having nothing in it.  The algorithm finds the smallest item in the unsorted list and and exhanges it with the furthest left unsorted item.  It then moves the sublist boundries one increment to the right after the move is complete in order to shrink the unsorted sublist and scale the sorted sublist."
+        },
+        {
+            "name": "Heap Sort",
+            "best": "O log(n)",
+            "average": "O log(n)",
+            "worst": "O log(n)",
+            "overview": "Heap Sort is a comparision basesd sorting algorithm and is an improved version of Selection Sort.",
+            "advantages": "Better performance over Selection Sort because it uses a heap data structure rather than a linear time search.  It can be used efficently on large datasets.  It sorts data in place so memory usage is efficent and minimal.  It is can be considered very efficent in relation to it minimal code complexity and is realatively simple since it does not use recursion.",
+            "disadvantages": "Its worst case scenario performance is very close to that of Merge Sort.  It is not a stable sorting algorithm meaning duplicate value items do not preserve their original placement.",
+            "howItWorks": "Heap Sort divides a list into an unsorted and sorted sublist. It finds the largest item in the unsorted sublist and moves it to the sorted region.  It uses a binary heap tree data structure to prioritize sorting."
         },
         {
             "name": "",

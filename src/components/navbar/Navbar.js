@@ -33,6 +33,8 @@ const Navbar = () => {
                     <Link className='link' to='bubble-sort' onClick={navigateAway}> Bubble Sort </Link>
                     <Link className='link' to='insert-sort' onClick={navigateAway}> Insert Sort </Link>
                     <Link className='link' to='merge-sort' onClick={navigateAway}> Merge Sort </Link>
+                    <Link className='link' to='selection-sort' onClick={navigateAway}> Selection Sort </Link>
+                    <Link className='link' to='heap-sort' onClick={navigateAway}> Heap Sort </Link>
                 </div>
             }
         </div>
