@@ -17,7 +17,7 @@
     margin-top: 15px;
     background-color: #C02F1D;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 10;
 }
 
 .link {
