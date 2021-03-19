@@ -32,6 +32,7 @@ const Navbar = () => {
                 <div className='link-wrapper' >
                     <Link className='link' to='bubble-sort' onClick={navigateAway}> Bubble Sort </Link>
                     <Link className='link' to='insert-sort' onClick={navigateAway}> Insert Sort </Link>
+                    <Link className='link' to='merge-sort' onClick={navigateAway}> Merge Sort </Link>
                 </div>
             }
         </div>

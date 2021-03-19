@@ -8,7 +8,7 @@ const Homepage = () => {
     return (
         <div className="home-wrap">
             <div className='background-image'> </div>
-            <div class="bg-text">
+            <div className="bg-text">
                 <h1>Practice and Learn Algorithms</h1>
                 <p>Fully Interactive. Fully Understandable.</p>
             </div>

@@ -21,6 +21,16 @@
             "howItWorks": "Insert sort is a looping sorting algorithm where the list is broken into two pieces, sorted and unsorted, and consumes one item per iteration. It runs through the unsorted portion, removes a selected item from the unsorted portion, finds the correct location for it in the sorted portion and inserts it there."
         },
         {
+            "name": "Merge Sort",
+            "best": "O log(n)",
+            "average": "O log(n)",
+            "worst": "O log(n)",
+            "overview": "Merge Sort is a general purpose algorithm that utilizes a recursive divide and conquer mechanism.",
+            "advantages": "",
+            "disadvantages": "",
+            "howItWorks": ""
+        },
+        {
             "name": "",
             "best": "",
             "average": "",
